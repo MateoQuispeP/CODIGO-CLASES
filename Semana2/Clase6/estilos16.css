@@ -1,0 +1,35 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.section1{
+    background-color: #34ff59;
+    height: 300px;
+}
+
+.section2{
+    height: 500px;
+    background-color: #ffff00;
+    background-image: url(1.jpg);
+    background-size: cover;
+    background-position: center;
+   /* background-attachment: fixed;*/
+}
+.section3{
+    height: 400px;
+    background-image: url(https://picsum.photos/300/300);
+    background-repeat: no-repeat;
+}
+
+.section4, .section5{
+    height: 500px;
+}
+
+.section4{
+    background:linear-gradient(to top,#ff4488,purple);
+}
+
+.section5{
+    background-image: radial-gradient(circle,#ff8800,#0000aa);
+}

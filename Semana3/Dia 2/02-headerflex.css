@@ -1,0 +1,35 @@
+*{
+margin:0;
+box-sizing:border-box;
+padding:0;
+font-family: "Raleway",sans-serif;
+}
+
+.contenedor{
+    display: flex;
+    width:470px;
+    background-color: #067928;
+    border-radius: 10px;
+    align-items: center;
+    padding: 35px 15px;
+    gap: 20px;
+    margin:10px;
+}
+
+.titulo{
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.informacion{
+    color:white;
+    font-weight: medium;
+    font-size: 16px;
+    text-align: right;
+}
+
+
+
+

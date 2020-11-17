@@ -1,0 +1,35 @@
+@font-face{
+    font-family: "logotext";
+    src: url("Raleway.ttf");
+}
+
+.titulo{
+    font-family: 'Raleway';
+}
+
+h2{
+    font-family: "logotext";
+}
+
+.parrafo1{
+    font-family: 'raleway';
+    font-weight: 100    ;
+}
+
+.parrafo2{
+    text-align:center;
+    line-height:60px;
+}
+
+.parrafo3{
+    font-family: 'raleway';
+    font-weight: 100;
+    word-spacing:25px;
+    font-size:30px;
+    text-decoration: underline;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}

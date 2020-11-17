@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap"); 
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+:root{
+    --color-primary:hsl(300, 69%, 71%);
+    --color-secondary:hsl(257, 40%, 49%);
+}
+
+*{
+margin:0;
+box-sizing:border-box;
+padding:0;
+}
+
+body{
+    min-height: 100vh;
+    background-image: url("images/bg-desktop.svg");
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-color: var(--color-secondary);
+}
+
+.wrapper{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.hero{
+    display: flex;
+}
+
+.hero__info{
+    flex-direction: column;
+    display: flex;
+    padding-top: 2rem;
+    gap:2rem;
+    margin-left: 60px;
+    padding-right: 2rem;
+}
+
+.header{
+    padding-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.hero__title{
+    color: whitesmoke;
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.hero__text{
+    font-family: "Open Sans";
+    font-weight: 400;
+    line-height: 2rem;
+    color:whitesmoke;
+    width: 80%;
+}
+
+.hero__btn{
+    padding:1rem 0;
+    background-color: whitesmoke;
+    width: 12.5rem;
+    border:none;
+    outline: none;
+    border-radius: 1rem;
+    box-shadow: 0px 2px 12px #111;
+    cursor: pointer;
+}
+
+.hero__btn:hover{
+    background-color: var(--color-primary);
+    transition: 0.3s all ease;
+    color: white;
+}
+
+.footer__btn{
+    border-radius: 50%;
+    padding:10px;
+    color: whitesmoke;
+    background-color: transparent;
+    border: 1px solid whitesmoke;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.footer{
+    text-align: right;
+}
+
+.footer__btn:hover{
+    transition: 0.3s all ease;
+    color: var(--color-primary);
+}

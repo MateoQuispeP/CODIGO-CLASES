@@ -1,0 +1,13 @@
+ul li{
+    text-decoration:underline;
+    color:blue;
+}
+
+ol > li{
+    text-decoration:underline;
+    color:orange;
+}
+h1,h2{
+    color:purple;
+    font-family: 'Times New Roman', Times, serif;
+}

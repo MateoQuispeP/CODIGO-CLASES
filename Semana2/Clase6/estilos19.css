@@ -1,0 +1,45 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background-color: #EBEBEB;
+}
+
+h1{
+    margin: 10px 0px 25px 0px;
+    text-align: center;
+    font-weight: bold;
+}
+
+hr{
+    border: 0.5px solid #b3b3b3;
+}
+
+.contenedor{
+    width: 500px;
+    margin:20px auto;
+    background-color: white;
+    border-radius: 20px;
+    padding:20px 20px 30px 20px;
+    box-shadow: 5px 5px 15px black;
+}
+
+form > input{
+    width:100%;
+    padding:10px;
+    border:none;
+    margin:5px 0;
+    font-weight: bold;
+    outline: none;
+}
+
+form > label{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#b3b3b3;
+    font-size: 10px;
+    font-weight: bold;
+}
