@@ -51,3 +51,35 @@ for(i=0;i<=n_hamburguesas;i++){
 }
 console.log(`El total a pagar por la cantidad de ${i} es: ${total_pago}`);
 */
+
+/*Se requiere un algoritmo para determinar, de N cantidades, cuántas
+son cero, cuántas son menores a cero, y cuántas son mayores a cero.
+Realice el diagrama de flujo, el pseudocódigo y el diagrama N/S para
+representarlo, utilizando el ciclo apropiado.*/
+let ccero;
+let numero;
+let c_may=0;
+let c_men=0;
+let c_cero=0;
+let n_num = +prompt("Ingrese la cantidad de numeros a comprobar");
+for(i=1;i<=n_num;i++){
+    numero = +prompt("Ingrese un numero");
+    if(numero < 0){
+        let men = numero;
+        console.log(`El ${men} es menor a 0`);
+        c_men++;
+    }else{
+        if(numero > 0){
+            let may = numero;
+            console.log(`El ${may} es mayor a 0`);
+            c_may++;
+        }else{
+            ccero = numero;
+            console.log(`El ${ccero} es igual a 0`);
+            c_cero++;
+        }
+    }
+}
+console.log(`Hay ${c_men} numeros menores a 0`);
+console.log(`Hay ${c_may} numeros mayores a 0`);
+console.log(`Hay ${c_cero} numeros iguales a 0`);

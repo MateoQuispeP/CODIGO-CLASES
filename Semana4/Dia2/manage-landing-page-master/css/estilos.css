@@ -50,7 +50,11 @@ body{
 
 .columna{
     flex:50%;
+    max-width: 50%;
+}
 
+.main__banner{
+    max-width: 100%;
 }
 
 .medias{
@@ -60,7 +64,7 @@ body{
 
 .media__number{
 position: absolute;
-background-color: var(--color-Bright-Red);
+background-color: var(--color-Bright-Red);  
 color: white;
 height: 2rem;
 width: 3rem;
@@ -110,6 +114,19 @@ border-radius: 1rem;
     width: 4rem;
     height: 4rem;
     transform: translate(0, -50%);
+}
+
+@media screen and(max-width: 1440px){
+    body{
+        padding:0 1.5rem;
+    }
+}
+
+@media screen and(max-width: 768px){
+    .columna{
+        flex: 100%;
+        max-width: 100%;
+    }
 }
 
 
