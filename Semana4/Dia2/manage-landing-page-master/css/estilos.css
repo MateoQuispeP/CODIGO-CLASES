@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;600&display=swap');
 
-root{
+:root{
     --ancho-maximo: 1440px;
     --color-Dark-Blue: hsl(228, 39%, 23%);
     --color-Bright-Red: hsl(12, 88%, 59%);
@@ -18,12 +18,12 @@ body{
 }
 
 .header1{
-    max-width:var(--ancho-maximo);
-    display: flex;
-    margin:0 auto;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
+    max-width: var(--ancho-maximo);
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 80px
 }
 
 .header__list{
@@ -35,11 +35,11 @@ body{
 .header__link{
     text-decoration: none;
     color:var(--color-Dark-Blue);
-    font-weight: 700px;
+    font-weight: 700;
 }
 
 .main{
-    max-width: var(--ancho-maximo);
+    max-width:var(--ancho-maximo);
     margin:0 auto;
 }
 
@@ -60,14 +60,15 @@ body{
 
 .media__number{
 position: absolute;
-background-color: hsl(12, 88%, 59%);
+background-color: var(--color-Bright-Red);
 color: white;
 height: 2rem;
 width: 3rem;
-border-radius: 5px;
+
 display: flex;
 justify-content: center;
 align-items: center;
+border-radius: 1rem;
 }
 
 .media__title{
