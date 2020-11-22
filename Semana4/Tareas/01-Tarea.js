@@ -56,6 +56,8 @@ console.log(`El total a pagar por la cantidad de ${i} es: ${total_pago}`);
 son cero, cuántas son menores a cero, y cuántas son mayores a cero.
 Realice el diagrama de flujo, el pseudocódigo y el diagrama N/S para
 representarlo, utilizando el ciclo apropiado.*/
+
+/*
 let ccero;
 let numero;
 let c_may=0;
@@ -83,3 +85,9 @@ for(i=1;i<=n_num;i++){
 console.log(`Hay ${c_men} numeros menores a 0`);
 console.log(`Hay ${c_may} numeros mayores a 0`);
 console.log(`Hay ${c_cero} numeros iguales a 0`);
+*/
+
+/* 
+
+
+*/
