@@ -400,6 +400,87 @@ let peliculas = [
     }
   ]
 
+  let generos = [
+    {
+      "id": 28,
+      "name": "Acción"
+    },
+    {
+      "id": 12,
+      "name": "Aventura"
+    },
+    {
+      "id": 16,
+      "name": "Animación"
+    },
+    {
+      "id": 35,
+      "name": "Comedia"
+    },
+    {
+      "id": 80,
+      "name": "Crimen"
+    },
+    {
+      "id": 99,
+      "name": "Documental"
+    },
+    {
+      "id": 18,
+      "name": "Drama"
+    },
+    {
+      "id": 10751,
+      "name": "Familia"
+    },
+    {
+      "id": 14,
+      "name": "Fantasía"
+    },
+    {
+      "id": 36,
+      "name": "Historia"
+    },
+    {
+      "id": 27,
+      "name": "Terror"
+    },
+    {
+      "id": 10402,
+      "name": "Música"
+    },
+    {
+      "id": 9648,
+      "name": "Misterio"
+    },
+    {
+      "id": 10749,
+      "name": "Romance"
+    },
+    {
+      "id": 878,
+      "name": "Ciencia ficción"
+    },
+    {
+      "id": 10770,
+      "name": "Película de TV"
+    },
+    {
+      "id": 53,
+      "name": "Suspense"
+    },
+    {
+      "id": 10752,
+      "name": "Bélica"
+    },
+    {
+      "id": 37,
+      "name": "Western"
+    }
+  ]
+
+
+/*
 const peliculasEnIngles = () =>{
     let cantidad = 0;
     peliculas.filter((elemento)=> {
@@ -410,3 +491,89 @@ const peliculasEnIngles = () =>{
     return cantidad;
 }
 console.log(peliculasEnIngles());
+*/
+
+/**
+ * Funcion que imprimo los generos que tiene una pelicula
+ * Como parametro, pasar titulo(original_title de la pelicula)
+ * @param {*} title 
+ */
+/*
+const imprimirGenerosDelTituloPelicula = (title) =>{
+    peliculas.find((elemento) => {
+        if(elemento.original_title ===title){
+          return elemento;
+        }
+      });
+}
+imprimirGenerosDelTituloPelicula("Mulan");
+
+const imprimirGenerosDelTituloPelicula = (title) =>{
+    const objPelicula =peliculas.find((peli)=>{
+        if(peli.original_title === title){
+            return peli;
+        }
+    });
+    if(objPelicula){
+        objPelicula.genre_ids.forEach((id)=> {
+            const objGenero = 
+        })
+    }
+}
+imprimirGenerosDelTituloPelicula("Mulan");
+*/
+
+const printGenresByTitleMovie = (title) => {
+    const objPelicula = peliculas.find((peli) => {
+      if (peli.original_title === title) {
+        return peli;
+      }
+    });
+    if (objPelicula) {
+      objPelicula.genre_ids.forEach((id) => {
+        const objGenero = generos.find((gen) => {
+          if (gen.id === id) {
+            return gen;
+          }
+        });
+        if (objGenero) {
+          console.log(`Genero: ${objGenero.name}`);
+        }
+      })
+    }
+  }
+  printGenresByTitleMovie("Hard Kill");
+/**
+ * Funcion que imprime la mayor y menor cantidad de de votos(vote_count)
+ * 
+ */
+
+  const mayorYmenor = () => {
+    let mayor=0;
+    peliculas.filter((elemento)=> {
+
+      if(mayor < elemento.vote_count){
+        mayor = elemento.vote_count;
+      }
+    });
+    return mayor;
+  }
+
+  console.log(mayorYmenor());
+/**
+ * Funcion que imprima las peliculas (obejtos) que tengan la
+ * mayor cantidad de generos array.length
+ */
+
+  const mayorCantidadDeGeneros =()=>{
+      let mayor=0;
+      const objPelicula = peliculas.filter((elemento)=> {
+        
+      });
+      return ;
+  }
+
+  console.log(mayorCantidadDeGeneros());
+/**
+ * Funcion que retorna un 
+ */
