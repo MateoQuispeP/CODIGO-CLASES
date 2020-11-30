@@ -16,12 +16,31 @@
  * document.getElementsByClassName("ClassName")
  */
 
- let className = document.getElementsByClassName("list__item");
+ let lista = document.getElementsByClassName("list__item");
 
- console.log(className);
+ console.log(lista);
  /**
   * Hack para convertirlo a un arreglo
   */
 
-  let arreglo = Array.from(className);
+  let arreglo = Array.from(lista);
   console.log(arreglo);
+
+  arreglo.forEach((liz, i) => {
+    liz.innerText = `List item ${i}`;
+  }
+  )
+
+  let subtitulo = document.querySelector("#subtitulo");
+  subtitulo.style.textDecoration = "none";
+
+  let cajitas = document.querySelectorAll(".cajita");
+  let cajitasArreglo = Array.from(cajitas);
+  cajitasArreglo.forEach((caja)=>{
+    caja.style.height = "20px";
+    caja.style.backgroundColor = "#444";
+    caja.style.width = "20px";
+    caja.style.borderRadius = "50%";
+  })
+
+  
