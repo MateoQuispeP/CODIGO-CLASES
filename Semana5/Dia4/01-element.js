@@ -55,3 +55,5 @@ setInterval(()=>{
     })
 
 },1000);
+
+console.log(imagen.getAttribute("src"));
